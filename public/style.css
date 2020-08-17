@@ -1,0 +1,88 @@
+body{
+    background-color: #FAFAFA;
+}
+.heading{
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 4px #BDBDBD;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+section{
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    width: 70%;
+}
+
+.data input{
+    border: none;
+    width: 50%;
+    padding: 4px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: #FAFAFA;
+    font-size: 18px;
+    font-weight: 500;
+}
+.data{
+    display: flex ;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list{
+    list-style-type: lower-alpha;
+    padding: 0;
+}
+.icons{
+    width: 15px;
+    height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.li{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 4px 4px 6px #D8D8D8;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 0.5px solid #BDBDBD;
+    font-weight: bold;
+}
+.btnadd{
+    background-color: green;
+    border-radius: 10px;
+    padding: 4px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+}
+
+.btndel{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 7px;
+    border: none;
+    width: 30%;
+}
+
+@media only screen and (max-width: 500px) {
+   section{
+       width: 100%;
+   }
+   .data input{
+       width: 90%;
+   }
+   
+  }

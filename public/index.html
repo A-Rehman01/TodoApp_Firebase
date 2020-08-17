@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- //Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBt9F3yEIDHjqH4Y71A4zOY4sHxQNr2IP0",
+          authDomain: "todoappjavascript-ecc73.firebaseapp.com",
+          databaseURL: "https://todoappjavascript-ecc73.firebaseio.com",
+          projectId: "todoappjavascript-ecc73",
+          storageBucket: "todoappjavascript-ecc73.appspot.com",
+          messagingSenderId: "599634259819",
+          appId: "1:599634259819:web:68ba57e97a8515b5aca62e",
+          measurementId: "G-8HVCNP46ME"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+    
+</head>
+
+<body> 
+    <!-- https://todoappjavascript-ecc73.web.app/            hosting -->
+    <h3 class="heading">TODO APP</h3>
+    <section>
+    <div class="data">
+        <input type="text" placeholder="Enter Todo..." name="todo" id="todo_Item" >
+        
+        
+
+    </div>
+    
+    <div class="listdiv">
+        <ul class="list" id="list">
+           
+        </ul>
+    </div>
+    <hr />
+    
+    <div class="btn">
+        <button class="btnadd" onclick="Add_item()">Add Item</button>
+        <button class="btndel" onclick="Delete_item()">Delete All</button>
+    </div>
+</section>
+    <script src="app.js"></script>
+</body>
+
+</html>
