@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="loginstyle.css">
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <title>SignUp</title>
-  <link rel="stylesheet" href="signupstyle.css">
+
+  <title>Login</title>
+
   <!-- //Firebase -->
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
@@ -32,27 +34,24 @@
 </head>
 
 <body>
-  <h3 class="heading">Signup</h3>
+  <h3 class="heading">Login</h3>
 
-    <div class="formsignup" >
+    <div class="formsignup">
     <div class="form-group">
-      
-      <label for="emailsign">Email address</label>
-      <input autofocus type="email" required class="form-control" id="emailsign" aria-describedby="emailHelp">
+      <label for="LoginEmail">Email address</label>
+      <input autofocus type="email" required class="form-control" id="LoginEmail" aria-describedby="emailHelp">
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
+
     <div class="form-group">
-      <label for="passwordsign">Password</label>
-      <input type="password" required class="form-control" id="passwordsign">
+      <label for="Loginpassword">Password</label>
+      <input type="password" required class="form-control" id="Loginpassword">
     </div>
     <p class="red" id="errormessage"></p>
-    <div class="form-group">
-      <p class="form-check-label" for="exampleCheck1">Already an Account ? <a href="./login/index.html">Login</a></p>
+    <button onclick="login()" class="btn btn-primary">Submit</button>
     </div>
-    <button onclick="signup()" class="btn btn-primary">Submit</button>
-  </div>
-  
-  <script src="Signup.js"></script>
+ 
+  <script src="login.js"></script>
 </body>
 
 </html>

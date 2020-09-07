@@ -1,0 +1,15 @@
+.formsignup{
+    padding: 20px !important;
+}
+.heading{
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 4px #BDBDBD;
+    font-weight: bold;
+    
+    text-transform: uppercase; 
+       margin-top: 30px;
+}
+.red{
+    color: red;
+}
